@@ -1,0 +1,19 @@
+<div class="chat-popup-wrapper chat-user-box" ng-class="{'close': thread.closed}">
+  <div class="chat-popup">
+    <div class="header">
+      <span>{{ members|createTitle }}</span>
+      <span class="btn-close" ng-click="close()">&times;</span>
+      <span class="btn-minimize" ng-click="toggleMinimize()">&#8211;</span>
+      <div class="clear"></div>
+    </div>
+    <div class="inner" ng-class="{'minimize': minimize}">
+      <div chat-logs class="chat-window">
+        <div chat-log-item ng-repeat="message in messages"></div>
+      </div>
+      <form ng-submit="sendChatMessage()" method="post" class="push_chat">
+        <input type="text" class="chat_input" ng-model="newMessage" />
+        <button>send</button>
+      </form>
+    </div>
+  </div>
+</div>

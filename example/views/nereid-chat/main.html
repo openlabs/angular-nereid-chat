@@ -1,0 +1,16 @@
+<div show-if-auth id="chat-line">
+  <div class="chat-popup-wrapper chat-friends-list">
+    <div class="chat-popup">
+      <div class="header">Friends List</div> <!-- Pop up header -->
+      <div class="inner">
+        <a class="user" ng-click="startNewChat(friend)" ng-repeat="friend in friends">
+          <span class="chat-presence" ng-class="{'online': friend.available}"></span>
+          <span class="display_name">{{friend.entity.displayName}}</span>
+          <span class="chat-status"> {{friend.status}}</span>
+        </a> <!-- Friend member -->
+      </div> <!-- Pop up inner -->
+    </div> <!-- Friends list pop up -->
+  </div> <!-- Friends list Pop Up -->
+
+  <chat-window thread="thread" ng-repeat="thread in threads"></chat-window> <!-- Chat Thread -->
+</div>  <!-- Fixed chat line -->

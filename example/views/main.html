@@ -1,0 +1,27 @@
+<div ng-hide="loggedIn">
+  <form role="form" ng-submit="login()">
+    <h4>Paths</h4>
+    <div class="form-group">
+      <label for="basePath">Base Path</label>
+      <input type="basePath" ng-model="basePath" class="form-control" placeholder="Base Path">
+    </div>
+    <div class="form-group">
+      <label for="userInfo">User Info Path</label>
+      <input type="userInfo" ng-model="userInfoPath" class="form-control" placeholder="User Info Path">
+    </div>
+
+    <h4>Login</h4>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" ng-model="username" class="form-control" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" ng-model="password" class="form-control" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-default">Log In</button>
+  </form>
+</div>
+<div ng-show="loggedIn">
+  You are logged In.
+</div>
