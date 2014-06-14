@@ -1,0 +1,31 @@
+{
+  "name": "angular-nereid-chat",
+  "version": "1.0.0",
+  "authors": [
+    "tarun.bhardwaj@openlabs.co.in"
+  ],
+  "main": "nereid-chat.js",
+  "description": "AngularJS Nereid Chat Module",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "nereid",
+    "chat"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.0",
+    "angular-nereid-auth": "~1.0.9",
+    "angular-route": "~1.2.17",
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+  }
+}
