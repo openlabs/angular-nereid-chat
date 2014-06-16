@@ -19,8 +19,8 @@ angular.module('openlabs.angular-nereid-chat', [
         }
 
         function openThread(thread) {
-          var threads = $scope.threads.filter(function (thread) {
-            return thread.id === thread.id;
+          var threads = $scope.threads.filter(function (elm) {
+            return elm.id === thread.id;
           });
           if(threads.length === 0) {
             $scope.threads.unshift(thread);
